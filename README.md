@@ -52,23 +52,23 @@ Make sure you have the following installed on your system:
 
 * Creating a Database and Database User in postgres:
 
-- Log into an interactive Postgres session by typing:
+Log into an interactive Postgres session by typing:
 
     ➜ ~ sudo -u postgres psql
 
-- First, you will create a database for the Django project.
+First, you will create a database for the Django project.
 
     postgres=# CREATE DATABASE db_name;
 
-- Next, you will create a database user which you will use to connect to and interact with the database.
+Next, you will create a database user which you will use to connect to and interact with the database.
 
     postgres=# CREATE USER 'username' WITH PASSWORD 'password';
 
-- Now, all you need to do is give your database user access rights to the database you created:
+Now, all you need to do is give your database user access rights to the database you created:
 
     postgres=# GRANT ALL PRIVILEGES ON DATABASE db_name TO username;
 
-- Exit the SQL prompt to get back to the postgres user’s shell session:
+Exit the SQL prompt to get back to the postgres user’s shell session:
 
     postgres=# \q
 
