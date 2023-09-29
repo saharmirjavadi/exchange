@@ -44,13 +44,13 @@ Make sure you have the following installed on your system:
 
 ### Database Setup
 
-* If you have Docker installed, you can easily set up a PostgreSQL database container:
+If you have Docker installed, you can easily set up a PostgreSQL database container:
 
     ➜ ~ docker compose build
     ➜ ~ docker compose up -d
 
 
-* Creating a Database and Database User in postgres:
+Creating a Database and Database User in postgres:
 
 Log into an interactive Postgres session by typing:
 
@@ -73,7 +73,7 @@ Exit the SQL prompt to get back to the postgres user’s shell session:
     postgres=# \q
 
 
-* Apply the database migrations:
+Apply the database migrations:
 
     ➜ ~ python manage.py makemigrations
     ➜ ~ python manage.py migrate
